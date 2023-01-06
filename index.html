@@ -1,1 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <div class='app' ">
+    <main class='project'>
+      <div class='project-info'>
+        <h1>Task Manager</h1>
+       
+      </div>
+      <div class='project-tasks'>
+        <div class='project-column'>
+          <div class='project-column-heading'>
+            <h2 class='project-column-heading__title'>Task Ready</h2> 
+            <div class='project-participants'>
+          
+              <button onclick="addtask()" class='project-participants__add' id="addtask">Add New Task</button>
+               
+              </div>
+          </div>
+          <div class='task' draggable='true'>
+            <div class='task__tags'><span class='task__tag task__tag--copyright'>Dsa</span></div>
+            <p id="demo" ' >
+              
+            </p>
+            </div>
+          <div class='task' draggable='true'>
+            <div class='task__tags'><span class='task__tag task__tag--copyright'>Dsa</span></div>
+            <p>Given an array which consists of only 0, 1 and 2. Sort the array without using any sorting algo</p>
+            
+            
+          </div>
+          
+          
+                  <div class='task' draggable='true'>
+            <div class='task__tags'><span class='task__tag task__tag--design'>JavaScript</span></div>
+            <p>JavaScript Revision</p>
+           
+          </div>
+          
+                  <div class='task' draggable='true'>
+            <div class='task__tags'><span class='task__tag task__tag--copyright'>Dsa</span></div>
+            <p>Find the Union and Intersection of the two sorted arrays</p>
+            
+          </div>
+        </div>
+        <div class='project-column'><div class='project-column-heading'>
+            <h2 class='project-column-heading__title'>In Progress</h2>
+          </div>
+            
+          <div class='task' draggable='true'>
+            <div class='task__tags'><span class='task__tag task__tag--design'>React project</span></div>
+            <p>Event Management System</p>
+            
+          </div>
+          
+          <div class='task' draggable='true'>
+            <div class='task__tags'><span class='task__tag task__tag--illustration'>React</span></div>
+            <p>Create Dynamic Website.</p>
+           
+          </div>
+          
+          <div class='task' draggable='true'>
+            <div class='task__tags'><span class='task__tag task__tag--copyright'>Dsa</span></div>
+            <p>Find the Union and Intersection of the two sorted arrays</p>
+           
+          </div>
+          
+          
+          
+          </div>
+        <div class='project-column'><div class='project-column-heading'>
+            <h2 class='project-column-heading__title'>Needs Review</h2>
+          </div>
+            
+          <div class='task' draggable='true'>
+            <div class='task__tags'><span class='task__tag task__tag--copyright'>Dsa</span></div>
+            <p>Merge 2 sorted arrays without using Extra space.</p>
+           
+          </div>
+          <div class='task' draggable='true'>
+            <div class='task__tags'><span class='task__tag task__tag--design'>JavaScript</span></div>
+            <p>UseState and useReducer.</p>
+           
+          </div>
+          <div class='task' draggable='true'>
+            <div class='task__tags'><span class='task__tag task__tag--illustration'>Context</span></div>
+            <p>Practice All context.</p>
+            
+          </div>
+          </div>
+        <div class='project-column'><div class='project-column-heading'>
+            <h2 class='project-column-heading__title'>Done</h2>
+          </div>
+          
+           <div class='task' draggable='true'>
+            <div class='task__tags'><span class='task__tag task__tag--illustration'>Project</span></div>
+            <p>Village Website Completed</p>
+           
+          </div>
+          
+           <div class='task' draggable='true'>
+            <div class='task__tags'><span class='task__tag task__tag--illustration'> Project</span></div>
+            <p>Weather App</p>
+           
+          </div>
+          
+           <div class='task' draggable='true'>
+            <div class='task__tags'><span class='task__tag task__tag--copyright'>Dsa</span></div>
+            <p>Rearrange the array in alternating positive and negative items with O(1) extra space.</p>
+           
+          </div>
+          
+          </div>
+        
+      </div>
+    </main>
+  
+  </div>
+  <script>
+   function addtask(){
+    
+    let input=prompt("Enter New Task");
+    if(input!=null){
+      document.getElementById("demo").innerHTML=input;
+    }
+    
+   }
+  </script>
+  <script src="App.js"></script>
+</body>
+
+</html>
 
