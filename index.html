@@ -20,27 +20,49 @@
             <h2 class='project-column-heading__title'>Task Ready</h2> 
             <div class='project-participants'>
           
-              <button onclick="addtask()" class='project-participants__add' id="addtask">Add New Task</button>
+              <form id="task-form">
+                <div class="input-field">
+                  <input style="border-radius: 2rem; background-color: rgb(255, 255, 255);" type="text" name="task" id="task" />
+                  
+                </div>
+                <button style="border-radius: 2rem; background-color: rgb(255, 51, 0);"
+                  class="btn waves-effect waves-light"
+                  type="submit"
+                  name="action"
+                >
+                  Add Task 
+                </button>
+              </form>
                
               </div>
           </div>
           <div class='task' draggable='true'>
             <div class='task__tags'><span class='task__tag task__tag--copyright'>Dsa</span></div>
-            <p id="demo" ' >
+          
+            <div class="card-action">
+              <h5 style="text-align: center";>Tasks</h5>
+              <div class="input-field col s12">
+                
+              </div>
               
-            </p>
+              <ul  class="collection">  </ul>
+              
+                </div>
+              
+           
             </div>
           <div class='task' draggable='true'>
             <div class='task__tags'><span class='task__tag task__tag--copyright'>Dsa</span></div>
+            
             <p>Given an array which consists of only 0, 1 and 2. Sort the array without using any sorting algo</p>
-            
-            
+              
           </div>
           
           
                   <div class='task' draggable='true'>
             <div class='task__tags'><span class='task__tag task__tag--design'>JavaScript</span></div>
             <p>JavaScript Revision</p>
+            
            
           </div>
           
@@ -123,18 +145,13 @@
     </main>
   
   </div>
-  <script>
-   function addtask(){
-    
-    let input=prompt("Enter New Task");
-    if(input!=null){
-      document.getElementById("demo").innerHTML=input;
-    }
-    
-   }
-  </script>
+  
+
+
   <script src="App.js"></script>
 </body>
 
 </html>
+
+
 
